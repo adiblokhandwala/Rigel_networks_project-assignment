@@ -1,0 +1,3 @@
+Data fetched for ^NSEI
+Total records: 123
+Operations performed: dropna, lowercase columns
