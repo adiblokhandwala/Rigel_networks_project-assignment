@@ -1,3 +1,4 @@
 Data fetched for ^NSEI
 Total records: 123
-Operations performed: dropna, lowercase columns
+Operations performed on Dataframe: dropna, lowercase columns
+Data sourced from Yahoo Finance using yfinance library
