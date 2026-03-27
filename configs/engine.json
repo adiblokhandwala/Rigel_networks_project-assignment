@@ -1,5 +1,6 @@
 {
   "data_file": "data/ohlc_clean.csv",
+  "timezone": "Asia/Kolkata",
   "start_equity": 100000,
   "data_ticker": "^NSEI", 
   "regime_classifier": {
