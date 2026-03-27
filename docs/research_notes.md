@@ -114,7 +114,7 @@ If market conditions change, we close our position which we have entered by asse
 ## Improvements suggested
 * In the paper, it is suggested to fetch `ohlc_raw.csv`, process it, and convert it into `ohlc_clean.csv` for a particular instrument. We can automate this data pre-processing pipeline, which is implemented in this project.
 * Also, I have made switching instruments easy by just changing the parameter `"data_ticker": "^NSEI"`; we can do this for different instruments just by changing this value to e.g. `"SPX"`.
-* For regime detection and strategy calculation, we can do it in near linear time complexity by vectorized operations in a Pandas DataFrame, rather than calculating for each day cumulatively and getting O(N^2) complexity.
+* For regime detection and strategy calculation, we can do it in near linear time complexity by vectorized operations in a Pandas DataFrame, rather than calculating for each day cumulatively and getting O(N^2) complexity. Also as we are looking at only past data, we are avoiding **the look-ahead bias**.
 * In trending regime detection we have our condition `price > ma50`, but this only captures upward trends; we can also add `price < ma50` (i.e. `price > ma50` or `price < ma50` or `|MA slope| > threshold`) to accommodate downward trends.
 * In regime detection, rather than calculating the raw slope, we normalize it by dividing by the instrument price, so it works for instruments of different scales.
 * We can change the slope threshold dynamically like picking the 70th percentile slope as a threshold; this also adapts to different kinds of instruments such as crypto which is very volatile vs. a gold ETF which is relatively less volatile.
