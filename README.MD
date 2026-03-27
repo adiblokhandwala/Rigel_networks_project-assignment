@@ -4,7 +4,7 @@
 
 A modular Python-based backtesting engine designed to evaluate trading strategies under different market regimes such as **trending** and **ranging** conditions.
 
-The system is built with flexibility in mind — new strategies can be added easily without modifying the core engine by simply updating configuration files and adding strategy classes.
+The system is built with flexibility in mind — new strategies can be added easily without modifying the core engine by simply updating configuration files and adding strategy classes. The system is implemented specified according to the QDA-1.pdf file in the repository.
 
 ---
 
