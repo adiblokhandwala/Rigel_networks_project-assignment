@@ -97,7 +97,7 @@ Example:
 
 ### 📊 Selecting Different Market Data
 
-You can choose different market instruments by modifying the `"data_ticker"` parameter in the configuration file. just add the ticker name according to yfinance. E.g. for NIFTY50 , use "^NSEI", for nifty 50 data.
+You can choose different market instruments by modifying the `"data_ticker"` parameter in the configuration file. just add the ticker name according to yfinance. E.g. for NIFTY50 , use "^NSEI", for nifty 50 data. it is default set to value "^NSEI" for nifty 50 index.
 
 #### Examples
 
